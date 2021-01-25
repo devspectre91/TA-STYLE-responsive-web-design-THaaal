@@ -149,8 +149,8 @@ html {
 }
 
 .container {
-	max-width: 768px;
-	width: 95%;
+
+	width: 90%;
 	margin: 0 auto;
 	padding: 4rem 2rem;
 }
@@ -285,8 +285,10 @@ footer {
 	}
 
 	.container {
-		max-width: 1320px;
+		
 		width: 90%;
+		margin: auto;
+
 		padding: 1rem 0;
 	}
 
