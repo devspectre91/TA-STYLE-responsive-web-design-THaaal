@@ -286,8 +286,6 @@ footer {
 
 	.container {
 		
-		width: 90%;
-		margin: auto;
 
 		padding: 1rem 0;
 	}
@@ -353,8 +351,9 @@ footer {
 	}
 
 	.blog article img {
-		width: 350px;
-		height: 220px;
+		width: 100%;
+		max-height: 220px;
+		object-fit: cover;
 	}
 
 	.blog h2 {
