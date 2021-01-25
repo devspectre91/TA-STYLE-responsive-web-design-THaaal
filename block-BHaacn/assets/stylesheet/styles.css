@@ -149,12 +149,22 @@ table {
     --primary: #23347B;
     --secondary: #F9234D;
     --light: #DFECFF;
+    --grey: rgb(104, 104, 104);
     --lightprimary: #3c4c8f;
 }
 
 html {
     font-size: 10px;
     font-family: 'Nunito', sans-serif;
+}
+
+body {
+    line-height: 1.5;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .dark-text {
@@ -165,6 +175,10 @@ html {
     color: white;
 }
 
+.red-text {
+    color: var(--secondary);
+}
+
 a {
     text-decoration: none;
     font-size: 1.5rem;
@@ -172,7 +186,7 @@ a {
 }
 
 .margin-l {
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 .margin-r {
@@ -193,6 +207,17 @@ a {
 
 .padding-m {
     padding: 0 3rem;
+}
+
+.btn-primary {
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    padding: 1.2rem 4rem;
+    text-transform: capitalize;
+    margin-left: 3rem;
+    background-color: var(--secondary);
+    display: inline-block;
+
 }
 
 
@@ -228,4 +253,452 @@ a {
 
 .space-c {
     align-items: space-between;
+}
+
+.grow-65 {
+    flex: 0 1 65%;
+}
+
+.grow-60 {
+    flex: 0 1 60%;
+}
+
+.grow-58 {
+    flex: 0 1 58%;
+}
+
+.grow-55 {
+    flex: 0 1 55%;
+}
+
+.grow-50 {
+    flex: 0 1 50%;
+}
+
+.grow-40 {
+    flex: 0 1 40%;
+}
+
+.grow-48 {
+    flex: 0 1 48%;
+}
+
+.grow-33 {
+    flex: 0 1 33%;
+}
+
+.grow-30 {
+    flex: 0 1 30%;
+}
+
+.grow-28 {
+    flex: 0 1 28%;
+}
+
+.grow-24 {
+    flex: 0 1 24%;
+}
+
+.grow-20 {
+    flex: 0 1 20%;
+}
+
+.grow-14 {
+    flex: 0 1 14%;
+}
+
+
+/* styling header section---------------------------------- */
+
+.header {
+
+    background-image: linear-gradient(to right, rgba(0, 0, 200, 0.8), rgba(0, 0, 200, 0.8)), url(../banner.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+
+}
+
+.navbar {
+    padding: 3rem 0;
+}
+
+.brand-icon a {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+li {
+    padding: 2rem 0;
+}
+
+nav a {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+/* styling hero section  */
+
+.hero {
+    padding: 3rem 0;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 2rem 0;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+.hero p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.5rem 0;
+    margin-bottom: 3rem;
+
+}
+
+.hero-content {
+    height: 40rem;
+}
+
+.hero .btn-primary {
+    margin: 0;
+    color: white;
+    font-weight: 500;
+}
+
+.hero-img img {
+    width: 100%;
+    border: none;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+/* styling about section */
+
+.about {
+    padding: 3rem 0;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about h2 {
+    font-size: 4.5rem;
+    margin: 2rem 0;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+.about p {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.5rem 0;
+    color: var(--grey);
+    margin-bottom: 3rem;
+}
+
+.about .btn-primary {
+    margin: 0;
+    color: white;
+    font-weight: 700;
+}
+
+/* styling join section */
+
+.join {
+    background-color: var(--light);
+    padding: 4rem 0;
+}
+
+.join h2 {
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+
+.join fieldset {
+    border: 2px dashed var(--secondary);
+    padding: 2rem;
+
+}
+
+.join fieldset span {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.join fieldset p {
+    font-size: 1.5rem;
+    color: var(--grey);
+    margin: 1.5rem 0;
+}
+
+.join fieldset legend {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+/* styling schedule section */
+.schedule {
+    padding: 6rem 0;
+
+}
+
+.schedule h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+
+.schedule .circle {
+    height: 12rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    width: 12rem;
+    margin-bottom: 4.5rem;
+    border-radius: 6rem;
+    border: 2px dashed var(--secondary);
+    text-align: center;
+    line-height: 1;
+}
+
+.schedule .circle:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.col-1 {
+    position: relative;
+}
+
+.schedule .centered {
+    border: none;
+    position: absolute;
+    border-left: 2px dashed var(--secondary);
+    height: 5rem;
+}
+
+.schedule .line1 {
+    left: 6rem;
+    top: 12rem;
+}
+
+.schedule .line2 {
+    left: 6rem;
+    top: 29rem;
+}
+
+.schedule .line3 {
+    left: 6rem;
+    top: 46rem;
+}
+
+.schedule .active {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.schedule .col-2 img {
+    width: 100%;
+    margin-bottom: 5.8rem;
+    border-radius: 0.5rem;
+}
+
+.schedule .col-3 span {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+.schedule .col-3 p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--grey);
+    margin-top: 1rem;
+    margin-bottom: 5.8rem;
+
+}
+
+.schedule .btn-primary {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/* styling services section */
+
+.services {
+    background-color: var(--light);
+    padding: 4rem 0;
+}
+
+.services .container {
+    width: 80%;
+}
+
+.services-img {
+    display: flex;
+    padding: 1rem 2.3rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.services-img:hover {
+    border-radius: 1rem;
+
+    background-color: var(--secondary);
+}
+
+.services-img img {
+    width: 50%;
+    display: block;
+}
+
+.services-img h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.services-img span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.services .active {
+    border-radius: 1rem;
+
+    background-color: var(--secondary);
+}
+
+/* styling video section */
+.video {
+    padding: 6rem 0;
+
+}
+
+video {
+    margin: 0;
+    width: 100%;
+    height: 50rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+/* styling news section */
+.news {
+    background-color: var(--light);
+    padding: 4rem 0 8rem 0;
+}
+
+.news article img {
+    width: 100%;
+}
+
+.news article h4 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+
+.news article p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--grey);
+}
+
+.news article a {
+    text-decoration: underline;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 2rem 0;
+}
+
+.news .active {
+    color: var(--secondary);
+}
+
+.news article a:hover {
+    color: var(--secondary);
+}
+
+/* styling bottom links section */
+
+.bottom-links {
+    background-color: var(--lightprimary);
+    padding: 4rem 0;
+}
+
+.bottom-links .logo {
+    align-self: center;
+
+}
+
+
+
+.bottom-links .quick-links,
+.follow-us span {
+    font-size: 2rem;
+    color: white;
+    font-weight: 900;
+}
+
+.quick-links {
+    margin-left: 5rem;
+    height: 6.5rem;
+
+}
+
+.follow-us {
+    height: 6rem;
+}
+
+.quick-links li {
+    margin: 0;
+    padding: 0;
+
+}
+
+.quick-links a {
+    color: rgb(143, 143, 143);
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.fa {
+    margin-right: 2rem;
+    color: var(--light);
+}
+
+/* styling footer */
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--primary);
+}
+
+.footer-text {
+    font-size: 1.5rem;
+    color: rgb(143, 143, 143);
 }
