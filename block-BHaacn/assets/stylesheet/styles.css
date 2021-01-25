@@ -149,12 +149,20 @@ table {
     --primary: #23347B;
     --secondary: #F9234D;
     --light: #DFECFF;
+    --grey:rgb(104, 104, 104);
     --lightprimary: #3c4c8f;
 }
 
 html {
     font-size: 10px;
     font-family: 'Nunito', sans-serif;
+}
+body{
+    line-height: 1.5;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
 }
 
 .dark-text {
@@ -164,6 +172,9 @@ html {
 .white-text {
     color: white;
 }
+.red-text{
+    color: var(--secondary);
+}
 
 a {
     text-decoration: none;
@@ -172,7 +183,7 @@ a {
 }
 
 .margin-l {
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 .margin-r {
@@ -193,6 +204,16 @@ a {
 
 .padding-m {
     padding: 0 3rem;
+}
+.btn-primary{
+   font-size: 1.8rem;
+   border-radius: 0.5rem;
+   padding: 1.2rem 4rem;
+   text-transform: capitalize;
+   margin-left: 3rem;
+   background-color: var(--secondary);
+   display: inline-block;
+
 }
 
 
@@ -228,4 +249,159 @@ a {
 
 .space-c {
     align-items: space-between;
+}
+.grow-60{
+    flex: 0 1 60%;
+}
+.grow-55{
+    flex: 0 1 55%;
+}
+.grow-50{
+    flex: 0 1 50%;
+}
+.grow-40{
+    flex: 0 1 40%;
+}
+.grow-48{
+    flex: 0 1 48%;
+}
+.grow-33{
+    flex: 0 1 33%;
+}
+.grow-30{
+    flex: 0 1 30%;
+}
+.grow-28{
+    flex: 0 1 28%;
+}
+.grow-24{
+    flex: 0 1 24%;
+}
+
+
+/* styling header section---------------------------------- */
+
+.header{
+  
+    background-image:  linear-gradient(to right, rgba(0,0,200,0.8),rgba(0,0,200,0.8)) ,url(../banner.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  
+}
+.navbar{
+    padding: 3rem 0;
+}
+.brand-icon a{
+    font-size: 3rem;
+    font-weight: 800;
+}
+li{
+    padding:2rem 0;
+}
+nav a{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform:uppercase;
+
+}
+
+/* styling hero section  */
+
+.hero{
+    padding: 3rem 0;
+}
+ h1{
+    font-size: 4rem;
+    margin: 2rem 0;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+.hero p{color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.5rem 0;
+    margin-bottom: 3rem;
+
+}
+.hero-content{
+    height: 40rem;
+}
+.hero .btn-primary{
+ margin: 0;
+ color: white;
+ font-weight: 500;
+}
+
+.hero-img img{
+    width: 100%;
+    border: none;
+    border-top-left-radius:2rem ;
+    border-bottom-right-radius: 2rem;
+}
+
+/* styling about section */
+
+.about{
+    padding: 3rem 0;
+}
+.about-img img{
+    width: 100%;
+}
+.about h2{
+    font-size: 4.5rem;
+    margin: 2rem 0;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+.about p{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.5rem 0;
+    color: var(--grey);
+    margin-bottom: 3rem;
+}
+.about .btn-primary{
+    margin: 0;
+    color: white;
+    font-weight: 700;
+}
+/* styling join section */
+
+.join{
+    background-color:var(--light);
+    padding: 4rem 0;
+}
+.join h2{
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+   
+}
+.join fieldset{
+    border: 2px dashed var(--secondary);
+    padding: 2rem;
+
+}
+.join fieldset span{
+   font-size: 2.5rem;
+   text-transform: capitalize;
+   font-weight: bold;
+   margin-bottom:1.5rem;
+}
+.join fieldset p{
+    font-size: 1.5rem;
+    color: var(--grey);
+    margin:1.5rem 0;
+}
+.join fieldset legend{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--secondary);
 }
