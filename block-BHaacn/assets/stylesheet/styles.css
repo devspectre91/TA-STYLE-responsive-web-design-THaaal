@@ -164,7 +164,7 @@ body {
 }
 
 .container {
-   width: 90%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -187,7 +187,7 @@ a {
 }
 
 .margin-l {
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
 
 .margin-r {
@@ -215,7 +215,7 @@ a {
     border-radius: 0.5rem;
     padding: 1.2rem 4rem;
     text-transform: capitalize;
-    margin-left: 3rem;
+    margin-left: 1rem;
     background-color: var(--secondary);
     display: inline-block;
 
@@ -238,6 +238,10 @@ a {
 
 .center-c {
     align-items: center;
+}
+
+.end-c {
+    justify-content: flex-end;
 }
 
 .start-m {
@@ -311,7 +315,8 @@ a {
 .grow-14 {
     flex: 0 1 14%;
 }
-.grow{
+
+.grow {
     flex-shrink: 1;
     flex-grow: 0;
 }
@@ -385,8 +390,7 @@ h1 {
 .hero-img img {
     width: 100%;
     border: none;
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+
 }
 
 /* styling about section */
@@ -505,18 +509,18 @@ h1 {
 }
 
 .schedule .line1 {
-    left: 6rem;
-    top: 12rem;
+    left: 11rem;
+    top: 11.6rem;
 }
 
 .schedule .line2 {
-    left: 6rem;
-    top: 29rem;
+    left: 11rem;
+    top: 28.5rem;
 }
 
 .schedule .line3 {
-    left: 6rem;
-    top: 46rem;
+    left: 11rem;
+    top: 45rem;
 }
 
 .schedule .active {
@@ -524,7 +528,7 @@ h1 {
     color: white;
 }
 
-.schedule .col-2 img {
+.schedule .col-3 img {
     width: 100%;
     margin-bottom: 5.8rem;
     border-radius: 0.5rem;
@@ -564,6 +568,7 @@ h1 {
 }
 
 .services-img {
+    width: 100%;
     display: flex;
     padding: 1rem 2.3rem;
     flex-direction: column;
@@ -578,8 +583,8 @@ h1 {
 }
 
 .services-img img {
-    width: 50%;
-    display: block;
+    width: 100%;
+
 }
 
 .services-img h2 {
@@ -713,7 +718,182 @@ footer {
     color: rgb(143, 143, 143);
 }
 
+#toggle {
+    display: none;
+}
+
+.bars {
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    html {
+        font-size: 7px;
+    }
+}
 
 /* styling for 768pc and below */
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    html {
+        font-size: 7px;
+    }
+
+    nav {
+        display: none;
+        padding: 12rem 0;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-top: 5rem;
+
+    }
+
+    #toggle:checked~nav {
+        display: inline-block;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    .bars {
+        display: inline-block;
+        font-size: 2.5rem;
+        color: white;
+        z-index: 90;
+        position: fixed;
+        top: 3rem;
+        right: 5rem;
+    }
+
+    .navbar {
+        padding: 3rem 0;
+
+    }
+
+    .brand-icon {
+        z-index: 90;
+        flex: 0 1 40%
+    }
+
+
+    .nav {
+        margin: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #3c4d8ff1;
+
+        right: 0;
+    }
+
+
+    /* styling hero */
+    .hero {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+        order: 1;
+    }
+
+    .hero-content p {
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    /* styling about */
+    .about {
+        flex-direction: column;
+        padding: 2rem;
+
+    }
+
+    .about p {
+        text-align: center;
+    }
+
+    /* styling join section */
+
+    .join-container {
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
+    .join-container fieldset {
+        margin-bottom: 2rem;
+    }
+
+    /* styling services section */
+    .services-wrapper {
+        flex-wrap: wrap;
+    }
+
+    /* styling news section */
+    .news {
+        padding: 3rem 0;
+    }
+
+    .news-wrapper {
+        flex-direction: column;
+    }
+
+    .news-wrapper article img {
+        width: 100%;
+
+    }
+
+    /* styling bottom links section */
+
+    .bottom-links {
+        padding: 2rem 0;
+    }
+
+    .link-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quick-links {
+
+        width: 100%;
+        margin: 0;
+        height: 2rem;
+
+    }
+
+    .quick-links span {
+        flex: 0 1 20%;
+    }
+
+    .link-wrapper .logo {
+        margin: 3rem 0;
+        align-self: flex-start;
+    }
+
+    .quick-links ul {
+        flex-direction: row;
+        flex: 0 1 70%;
+    }
+
+    .follow-us span {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+
+
+    }
+}
