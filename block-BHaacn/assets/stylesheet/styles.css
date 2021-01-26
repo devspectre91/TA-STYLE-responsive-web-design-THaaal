@@ -485,7 +485,8 @@ h1 {
     font-size: 3.5rem;
     font-weight: bold;
     width: 12rem;
-    margin-bottom: 4.5rem;
+    margin-top: 0.8rem;
+    margin-bottom: 6.2rem;
     border-radius: 6rem;
     border: 2px dashed var(--secondary);
     text-align: center;
@@ -505,22 +506,22 @@ h1 {
     border: none;
     position: absolute;
     border-left: 2px dashed var(--secondary);
-    height: 5rem;
+    height: 7.4rem;
 }
 
 .schedule .line1 {
     left: 11rem;
-    top: 11.6rem;
+    top: 12.4rem;
 }
 
 .schedule .line2 {
     left: 11rem;
-    top: 28.5rem;
+    top: 31.5rem;
 }
 
 .schedule .line3 {
     left: 11rem;
-    top: 45rem;
+    top: 50.7rem;
 }
 
 .schedule .active {
