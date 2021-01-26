@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family: 'Montserrat', sans-serif;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* General styling------------------------------------------------------------------------ */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 8px;
+}
+
+.container {
+
+	width: 90%;
+	margin: 0 auto;
+	padding: 4rem 2rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn-primary {
+	padding: 2rem 4rem;
+	background-color: #37B667;
+	display: inline-block;
+	margin: 2rem 0;
+	border-radius: 5px;
+}
+
+.btn-primary a {
+	font-size: 3rem;
+	font-weight: 600;
+	color: white;
+	text-transform: capitalize;
+}
+
+/* styling header */
+.header {
+	background-color: #222946;
+	padding: 2rem 0;
+}
+
+.navbar {
+	text-align: center;
+	margin: 3rem 0;
+}
+
+nav a {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+	margin-left: 3rem;
+	font-weight: 500;
+}
+
+nav a:hover {
+	color: #37B667;
+}
+
+.active {
+	color: #37B667;
+}
+
+.brand-icon {
+	text-align: center;
+
+}
+
+.brand-icon img {
+	width: 18rem;
+}
+
+
+/* styling about section */
+
+.about {
+	background-color: #E9ECFC;
+}
+
+section img {
+	width: 100%;
+	display: block;
+	margin-bottom: 4rem;
+}
+
+article h2 {
+	font-size: 5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+article p {
+	margin: 2rem 0;
+	font-size: 2.5rem;
+	line-height: 1.5;
+	color: lightslategrey;
+	text-align: left;
+}
+
+/* styling blog section */
+
+.blog h1 {
+	text-align: center;
+	font-size: 6rem;
+	margin: 3rem 0;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.blog .btn-primary {
+	padding: 1.5rem 3rem;
+	margin-bottom: 5rem;
+}
+
+/* styling footer section */
+
+footer {
+	background-color: #222946;
+	text-align: center;
+	padding: 5rem 0;
+}
+
+.footer-text {
+	font-size: 3rem;
+	color: white;
+	font-weight: 500;
+	margin-bottom: 4rem;
+}
+
+.footer-social .fa {
+	color: white;
+	margin-right: 5rem;
+
+}
+
+
+/* styling for desktop size */
+
+@media screen and (min-width:769px) {
+
+	/* general styling */
+
+	html {
+		font-size: 6px;
+	}
+
+	.container {
+		
+
+		padding: 1rem 0;
+	}
+
+	.flex-r {
+		display: flex;
+
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.center {
+		align-items: center;
+	}
+
+	.reverse {
+		flex-direction: row-reverse;
+	}
+
+	.grow-48 {
+		flex: 0 1 48%;
+	}
+
+	.grow-30 {
+		flex: 0 1 30%;
+	}
+
+	.btn-primary {
+		padding: 3rem 4rem;
+		border-radius: 5px;
+
+	}
+
+	.btn-primary a {
+		font-weight: 400;
+
+	}
+
+	/* styling desktop header */
+	.header {
+		padding: 1rem 0;
+	}
+
+	/* styling desktop about section */
+
+	.about {
+		padding: 8rem 0;
+	}
+
+	article h2 {
+		font-size: 6rem;
+		font-weight: 600;
+		text-transform: capitalize;
+
+	}
+
+
+	article p {
+		font-size: 3rem;
+		line-height: 1.6;
+		font-weight: 500;
+		color: grey;
+	}
+
+	.blog article img {
+		width: 100%;
+		max-height: 220px;
+		object-fit: cover;
+	}
+
+	.blog h2 {
+		font-size: 4rem;
+	}
+
+	.blog p {
+		font-size: 2rem;
+	}
+
+	/* styling desktop footer section */
+
+	footer {
+		background-color: #222946;
+		padding: 4rem 0;
+	}
+
+	.footer-text {
+		font-size: 3rem;
+		color: white;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	.footer-social .fa {
+		color: white;
+		margin: 0;
+		margin-left: 5rem;
+	}
+}
